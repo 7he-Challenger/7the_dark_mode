@@ -63,6 +63,7 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 .dark{
+    transition-duration: 1s;
     background-color: #000;
     color: #fff;
 }
