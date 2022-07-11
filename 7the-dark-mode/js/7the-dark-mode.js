@@ -83,7 +83,7 @@ class TheDarkMode {
         this.stateDark = this.darkKey;
         if(this.body.classList.contains(this.lightKey)) this.body.classList.remove(this.lightKey)
         this.body.classList.add(this.darkKey);
-        this.target.dom.checked = true;
+        this.target.dom.checked = false;
         
     }
 
@@ -93,7 +93,7 @@ class TheDarkMode {
         this.stateDark = this.lightKey;
         if(this.body.classList.contains(this.darkKey)) this.body.classList.remove(this.darkKey)
         this.body.classList.add(this.lightKey);
-        this.target.dom.checked = false;
+        this.target.dom.checked = true;
     }
 }
 
