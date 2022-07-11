@@ -52,7 +52,6 @@ class TheDarkMode {
                 e.stopPropagation();
     
                 // call switcher function depending on state
-                console.log(obj.stateDark, 'test')
                 obj.stateDark == obj.lightKey ? obj.toDark() : obj.toLight()
             })
         }else{
