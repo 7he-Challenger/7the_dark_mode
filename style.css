@@ -62,3 +62,10 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+.dark{
+    background-color: #000;
+    color: #fff;
+}
+.switch_mode{
+    text-align: center;
+}
