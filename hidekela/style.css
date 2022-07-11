@@ -1,0 +1,72 @@
+html,body
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.light_theme
+{
+    color: black;
+    background: white;
+}
+
+.dark_theme
+{
+    color: #d4d4d4;
+    background: #1e1e1e;
+}
+
+.switch_btn
+{
+    width: 55px;
+    height: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.light_theme .switch_btn
+{
+    background: white;
+    border: 2px solid #1e1e1e;
+}
+
+.dark_theme .switch_btn
+{
+    background: #1e1e1e;
+    border: 2px solid #d4d4d4;
+}
+
+.switch_btn:hover
+{
+    cursor: pointer;
+}
+
+.switch_rnd
+{
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+}
+
+.light_theme .switch_rnd
+{
+    right: 2px;
+    background: #1e1e1e;
+}
+
+.dark_theme .switch_rnd
+{
+    left: 2px;
+    background: #d4d4d4;
+}
