@@ -32,16 +32,22 @@
 .logo{
   width: 60px;
   height: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .showLogo{
-  display: block!important;
+  display: table!important;
   /* transition: all 0.5s; */
 }
 
 .hideLogo{
   display: none!important;
   /* transition: all 0.5s; */
+}
+
+.text-center{
+  text-align: center;
 }
 
 
@@ -52,7 +58,10 @@
     width: 60px;
     height: 34px;
     display: block;
-    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   /* Hide default HTML checkbox */
@@ -108,4 +117,39 @@
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  .container{
+    display: table;
+    margin: auto;
+    height: 100%;
+    max-width: 1200px;
+    position: relative;
+    width: 100%;
+  }
+
+  .row{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  .logo-container{
+    position: absolute;
+    right: 0;
+    padding-top: 15px;
+  }
+
+  .center-vertical{
+    display: table;
+  }
+
+  .center-vertical span{
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 10px;
   }

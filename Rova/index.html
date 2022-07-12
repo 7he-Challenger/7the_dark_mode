@@ -6,37 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark mode</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <script src="jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="bootstrap/bootstrap.min.js"></script>
 </head>
 <body class="body-white">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 pt-3">
-                <img src="images/sun.png" class="logo white-logo showLogo">
-                <img src="images/moon.png" class="logo dark-logo hideLogo">
+        <div class="logo-container">
+            
+            <div class="white-logo showLogo center-vertical">
+                <span class="white darkEffect text-center">
+                    Bonne journée !
+                </span>
+                <img src="images/sun.png" class="logo">
             </div>
-        </div>
+            <div class="dark-logo hideLogo center-vertical">
+                <span class="white darkEffect text-center">
+                    Bonne soirée !
+                </span>
+                <img src="images/moon.png" class="logo">
+            </div>
+       </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="darkEffect white text-center">
-                    Dark Mode
+                    <div class="title-mode">
+                        Dark Mode : 
+                    </div>
+                    <label class="switch mt-3 mb-3">
+                        <input id="darkSwitch" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
                 </div>
-                <label class="switch mt-3 mb-3">
-                    <input id="darkSwitch" type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div>
-                    <p class="white darkEffect text-center">
-                        Hello world !
-                    </p>
-                </div>
+                <p class="white darkEffect text-center">
+                    Hello world !
+                </p>
             </div>
         </div>
     </div>
