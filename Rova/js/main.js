@@ -18,6 +18,8 @@ $(document).ready(function(){
 
             document.getElementsByClassName('dark-logo')[0].classList.add("hideLogo");
             document.getElementsByClassName('dark-logo')[0].classList.remove("showLogo");
+
+            document.getElementsByClassName('container-opt')[0].style.border = "solid 1px black";
     }else{
         setMode("DarkMode", "1", 1);
         var toRemove = "white";
@@ -27,6 +29,7 @@ $(document).ready(function(){
     
             document.getElementsByClassName('dark-logo')[0].classList.remove("hideLogo");
             document.getElementsByClassName('dark-logo')[0].classList.add("showLogo");
+            document.getElementsByClassName('container-opt')[0].style.border = "solid 1px white";
     }
     AllDarkEffect = document.getElementsByClassName('darkEffect');
     if(AllDarkEffect.length !=0){
