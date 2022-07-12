@@ -35,13 +35,15 @@ body
 
 .light_theme .switch_btn
 {
-    background: white;
+    background-image: url(images/light.png);
+    background-size: contain;
     border: 2px solid #1e1e1e;
 }
 
 .dark_theme .switch_btn
 {
-    background: #1e1e1e;
+    background: url(images/dark.png);
+    background-size: contain;
     border: 2px solid #d4d4d4;
 }
 
