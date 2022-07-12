@@ -18,6 +18,17 @@
     transition: all 0.5s;
 }
 
+.body-white .slider{
+  background-color: black;
+}
+.body-dark input:checked + .slider{
+  background-color: white;
+}
+
+.body-dark .slider:before{
+  background-color: black;
+}
+
 .logo{
   width: 60px;
   height: 60px;
