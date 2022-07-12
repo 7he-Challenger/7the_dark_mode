@@ -1,0 +1,73 @@
+body {
+  -webkit-transition: background 0.2s linear;
+  transition: background 0.2s linear;
+}
+
+body.dark {
+  background-color: #292C35;
+}
+
+.themeMode {
+  padding-top: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.label_darkMode {
+  background: #111;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 26px;
+  width: 50px;
+  position: relative;
+  border-radius: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+.ball {
+  background-color: #fff;
+  height: 22px;
+  width: 22px;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.2 linear;
+  transition: -webkit-transform 0.2 linear;
+  transition: transform 0.2 linear;
+  transition: transform 0.2 linear, -webkit-transform 0.2 linear;
+}
+
+.darkMode {
+  opacity: 0;
+  position: absolute;
+}
+
+#darkMode:checked + .label_darkMode .ball {
+  -webkit-transform: translateX(24px);
+          transform: translateX(24px);
+}
+/*# sourceMappingURL=style.css.map */
