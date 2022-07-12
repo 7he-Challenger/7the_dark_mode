@@ -1,5 +1,22 @@
 .switch_mode{
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.label-dark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.label-light{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
 }
 .switch {
     position: relative;
@@ -67,6 +84,8 @@ input:checked+.slider:before {
     background-color: #000;
     color: #fff;
 }
-.switch_mode{
-    text-align: center;
+.light{
+    transition-duration: 1s;
+    background-color: #fff;
+    color: #000;
 }
