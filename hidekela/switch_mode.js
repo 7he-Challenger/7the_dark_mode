@@ -3,16 +3,9 @@ var switchThemeBtn = document.querySelector(".switch_btn");
 var currTheme = 'light';
 
 function switchTheme() {
-    if(currTheme === 'light')
-    {
-        document.body.setAttribute("class","dark_theme");
-        currTheme = 'dark';
-    }
-    else
-    {
-        document.body.setAttribute("class","light_theme");
-        currTheme = 'light';
-    }
+    let isLigthTheme = currTheme === 'light';
+    document.body.setAttribute("class", isLigthTheme ? 'dark_theme' : 'light_theme');
+    currTheme = isLigthTheme ? 'dark' : 'light';
 }
 
 switchThemeBtn.addEventListener("click",()=>{
