@@ -6,9 +6,14 @@ darkMode.addEventListener('change', () =>{
     document.body.classList.toggle('dark');
     //save to localStorage the theme mode
     if(document.body.classList.contains('dark')){
-        console.log('dark')
-    }else{
-        console.log('light')
+       localStorage.setItem('darkMode',darkMode)
+           console.log('dark')
+        do{
+    console.log('it\'s dark')
+    //document.body.classList.add('dark');
+         }
+         while(localStorage.getItem('darkMode') === true)
+
     }
 
 });
