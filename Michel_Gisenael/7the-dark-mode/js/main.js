@@ -1,0 +1,1 @@
+const dark = new TheDarkMode('#btn');
