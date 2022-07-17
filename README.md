@@ -4,4 +4,4 @@
 
 Switching between light and dark mode with javascript
 
-**Initial commit
+**Our initial commit !**
